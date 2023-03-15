@@ -5,7 +5,7 @@ interface LoginInput {
   password: string
 }
 
-interface User {
+export interface User {
   email: string
   token: string
   username: string
