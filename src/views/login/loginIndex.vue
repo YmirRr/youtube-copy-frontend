@@ -19,9 +19,12 @@
 import { login } from '@/api/user'
 import { defineComponent, reactive, ref } from 'vue'
 import { useRouter } from 'vue-router'
+import { useStore } from '@/store'
 
 const useLogin = () => {
   const router = useRouter()
+  const store = useStore()
+  // store.state.count
   const user = reactive({
     email: 'ymir1660418573@sina.com',
     password: '123456'
